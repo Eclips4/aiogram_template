@@ -1,11 +1,12 @@
 from configparser import ConfigParser
 from dataclasses import dataclass
+from typing import Union
 
 
 @dataclass
 class AiogramBot:
     token: str
-    admin_id: int
+    admins_id: Union[list, int]
 
 
 def load_config(path: str) -> AiogramBot:
