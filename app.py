@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 async def main():
-    config = load_config('./aiogram_bot.ini')
+    config = load_config('aiogram_bot.ini')
     storage = MemoryStorage()
     bot = Bot(token=config.token)
     dp = Dispatcher(bot, storage=storage)
@@ -32,5 +32,3 @@ if __name__ == '__main__':
         pass
     finally:
         logging.info("Bot is stopped.")
-
-# aiogram_bot/config.py change ADMIN_ID: int -> ADMIN_ID: Union[list, int]
