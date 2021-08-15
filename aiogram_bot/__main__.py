@@ -11,7 +11,7 @@ logging.basicConfig(level=logging.INFO)
 
 
 async def main():
-    config = load_config('aiogram_bot.ini')
+    config = load_config('./aiogram_bot.ini')
     storage = MemoryStorage()
     bot = Bot(token=config.token)
     dp = Dispatcher(bot, storage=storage)
