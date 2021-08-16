@@ -7,6 +7,4 @@ COPY . /usr/src/aiogram_app/
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 80
-
-CMD ["python", "app.py"]
+CMD ["python", "-m", "aiogram_bot"]

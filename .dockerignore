@@ -2,12 +2,14 @@
 .gitignore
 .gitattributes
 
+
 docker-compose.yml
 Dockerfile
 .docker
 .dockerignore
 
+README.md
+
 **/__pycache__/
 **/*.py[cod]
-
 venv/
