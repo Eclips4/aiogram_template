@@ -9,8 +9,8 @@ You must have a pre-installed git, and docker
 ###
 Enter your token and admins id into aiogram_bot.ini
 
-    docker build -t aiogram_template_docker /aiogram_template
+    docker build -t aiogram_template_docker ./aiogram_template
 
-    docker run --rm aiogram_template
+    docker run --rm --name aiogram_bot_docker aiogram_template_docker
 
 Enjoy!
